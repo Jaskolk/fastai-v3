@@ -7,12 +7,13 @@ from io import BytesIO
 
 from fastai import *
 from fastai.vision import *
+from fastai.text import *
 
 # export_file_url = 'https://www.dropbox.com/s/v6cuuvddq73d1e0/export.pkl?raw=1'
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.dropbox.com/s/5bw81vcarey5elj/PE_sentiment.pkl?dl=0'
+export_file_name = 'PE_sentiment.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['1', '0']
 path = Path(__file__).parent
 
 app = Starlette()
